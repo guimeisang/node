@@ -13,5 +13,5 @@ Node发展为一个强制不共享任何资源的单线程、单进程系统，�
 Node保留了javascript的特点，依旧基于作用域和原型链，区别在于它将前端的广泛运用的思想迁到了服务器。  
 ### 1.4.1 异步I/O
 在Node中读取文件为例，我们可以看到它与前端的ajax调用的思想很像。如下图：
-![image](node异步调用)
+![image](https://github.com/guimeisang/node/blob/dev/img/node%E5%BC%82%E6%AD%A5%E8%B0%83%E7%94%A8.png)
 
