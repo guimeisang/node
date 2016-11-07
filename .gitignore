@@ -1,0 +1,55 @@
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.pyc
+
+pids
+logs
+results
+
+npm-debug.log
+node_modules
+
+# backups:
+backup/*.sql
+*.tar.gz
+
+# ssl:
+*.key
+*.crt
+*.csr
+
+# private config files:
+config_production.js
+config_development.js
+
+# generated css:
+itranswarp.css
+
+# generated js:
+www/static/js/all.js
+
+# temp output dir:
+output
+
+# generated sql:
+schema.sql
+
+######################
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+dist
+MANIFEST
