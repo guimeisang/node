@@ -27,13 +27,13 @@
  * .done();
  * 所以可以尝试改造下，用链式调用的思想
  */
-var fs =require('fs');
+
 var fs =require('fs');
 
 var Deferred =function(){
     this.promise = new Promise();
 }
-
+debugger;
 //完成态
 Deferred.prototype.resolve = function(obj){
     var promise = this.promise;
@@ -77,11 +77,13 @@ Deferred.prototype.callback = function(obj){
     };
 };
 
+
 var Promise = function(){
     //队列用于存储待执行的回调函数
     this.queue = [];
     this.isPromise = true;
 }
+
 
 Promise.prototype.then = function(fulfilledHandler,errorHandler,progressHandler){
     var handler = {};
@@ -96,12 +98,8 @@ Promise.prototype.then = function(fulfilledHandler,errorHandler,progressHandler)
 }
 
 //测试用例
-
 var readFile1 = function(file,encoding){
     var deffered = new Deferred();
-
-
-    
     fs.readFile(file,encoding,deferred.callback());
     return deferred.promise;
 }
