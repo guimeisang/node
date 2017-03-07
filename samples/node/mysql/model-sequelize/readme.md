@@ -6,4 +6,4 @@
     - 主键可以自己指定，也可以由框架自动生成（如果为null或undefined）；
     - 所有字段默认为NOT NULL，除非显式指定；
     - 统一timestamp机制，每个Model必须有createdAt、updatedAt和version，分别记录创建时间、修改时间和版本号。其中，createdAt和updatedAt以BIGINT存储时间戳，最大的好处是无需处理时区，排序方便。version每次修改时自增。  
-    
+3.     
