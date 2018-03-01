@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>用户列表页面</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>用户名</th>
+            <th>邮箱</th>
+            <th>操作</th>
+        </tr>
+        <% for(var i in user){ %>
+            <tr>
+                <td><%= user[i].username %></td>
+                <td><%= user[i].email %></td>
+                <td>
+                    <div>
+                        <a href="/users/detail/<%= user[i]._id %>"> 查看 </a>
+                        <a href="/users/edit/<%= user[i]._id %>"> 编辑 </a>
+                        <a href="#" class="del" data-id="<%= user[i]._id %>"> 删除 </a>
+                    </div>
+                </td>
+            </tr>
+        <% } %>
+    </table>
+</body>
+</html>
