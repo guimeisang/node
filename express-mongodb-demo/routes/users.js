@@ -5,16 +5,18 @@ var userModel = require('../models/userModel.js');
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   res.redirect('/users/list');
+  // res.send('respond with a resource');
 });
 
 router.get('/list', function(req, res, next) {
   userModel.find(function(err, data){
     if(err){ return console.log(err) }
-    // res.render('UserList',{
-    //   user: data
-    // })
-    res.render('list')
+    console.log(data);
+    res.render('UserList',{
+      user: data
+    })
   })
+  // res.send('respond with a resource');
 });
 
 // detail
