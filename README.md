@@ -12,3 +12,8 @@
 
 请跳转到文件夹下
 
+### nodejs入门好资料
+
+- [Nodejs艺术](https://github.com/maxogden/art-of-node/blob/master/readme.zh-cn.md)
+
+
