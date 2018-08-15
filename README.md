@@ -20,7 +20,7 @@
 
 
 ### TODO
-- [] 1. 完成一个基于egg的上传解析服务；2. 输出egg入门的图谱和要点；
-- [] 1. 用nodejs实现一个word文档解析器；参考[这个](https://juejin.im/post/5b713f0de51d456679159c6f)
+- [ ] a 完成一个基于egg的上传解析服务；b. 输出egg入门的图谱和要点；
+- [ ] a 用nodejs实现一个word文档解析器；参考[这个](https://juejin.im/post/5b713f0de51d456679159c6f)
 
 
